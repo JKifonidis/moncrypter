@@ -7,7 +7,7 @@ const buttonDecryptSubmit = document.querySelector('#buttonDecryptSubmit');
 
 const encrypt = function (text) {
   let textEncrypted = '';
-  text.toLowerCase();
+  text = text.toLowerCase();
   for (let i = 0; i < text.length; i++) {
     switch (text[i]) {
       case 'p':
@@ -56,7 +56,7 @@ const encrypt = function (text) {
 
 const decrypt = function (text) {
   let textDecrypted = '';
-  text.toLowerCase();
+  text = text.toLowerCase();
   for (let i = 0; i < text.length; i++) {
     switch (text[i]) {
       case 'o':
